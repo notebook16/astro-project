@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// ✅ Generate static paths
+export async function getStaticPaths() {
+  const veer = await getCollection("veer");
+
+  return veer.map((veer: any) => ({
+    params: { slug: veer.slug },
+    props: { veer: veer.data }, 
+  }));
+}
+
+// ✅ Get the data for the current Veer Nari
+interface Veer {
+  name: string;
+  image: string;
+  relation: string;
+  shortDescription: string;
+  fullDescription: string;
+}
+
+const { veer } = Astro.props as { veer: Veer };
+---
+
+<BaseLayout pageTitle={veer.name}>
+  <section class="veer-nari-profile">
+    <h1>{veer.name}</h1>
+    <img src={veer.image} alt={veer.name} class="veer-nari-image"/>
+    <p><strong>Relation:</strong> {veer.relation}</p>
+    <p>{veer.shortDescription}</p>
+    <article>
+      <p>{veer.fullDescription}</p>
+    </article>
+  </section>
+</BaseLayout>
+
+

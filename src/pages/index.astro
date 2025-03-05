@@ -1,18 +1,21 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<a href="/">Home</a>
-<a href="/about/">About</a>
-		<h1>Astro is my first astro project</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle} >
+	<section class="hero">
+		<h1>Welcome to Veer</h1>
+		<p>Supporting the families of our brave martyrs with honor and respect.</p>
+		
+		<div class="image-container">
+		  <img src="/home.jpg" >
+		</div>
+	  
+		<p>
+		  Our mission is to stand by the families of our brave soldiers who made the ultimate sacrifice.
+		  We provide support, opportunities, and a community of care for our Veer Naris.
+		</p>
+	  
+		<a href="/veer" class="explore-button">faimly of Veers</a>
+	  </section>
+</BaseLayout>

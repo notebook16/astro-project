@@ -1,0 +1,112 @@
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3c6e71;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .hero {
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    color: #006400; /* Dark Green */
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .image-container {
+    margin: 20px auto;
+    width: 60%;
+    max-width: 500px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500; /* Orange */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .explore-button:hover {
+    background-color: #cc3700;
+  }
+  
+
+  .veer-nari-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    gap: 20px;
+}
+
+
+  .veer-nari-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 20px;
+}
+
+.veer-nari-card {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: space-between; /* Distribute text and image */
+    gap: 20px; /* Space between text and image */
+    max-width: 800px; /* Adjust width as needed */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #54d284;
+}
+
+.veer-nari-content {
+    flex: 1; /* Allow text section to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically align text */
+}
+
+.veer-nari-card img {
+    width: 200px; /* Adjust image size */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.veer-nari-card h2,
+.veer-nari-card p {
+    margin: 5px 0;
+}
+
+.veer-nari-image{
+  width: 25rem; /* Adjust image size */
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  
