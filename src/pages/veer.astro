@@ -18,14 +18,14 @@ try {
   <section class="veer-nari-container">
     {veer.map(({ data }) => (
       <div class="veer-nari-card">
-        {/* Left Side: Text */}
+        
         <div class="veer-nari-content">
           <h2><a href={`/veer/${data.slug}`}>{data.name}</a></h2>
           <p class="relation">{data.relation}</p>
           <p class="short-description">{data.shortDescription}</p>
         </div>
 
-        {/* Right Side: Image */}
+       
         <img src={data.image} alt={data.name} class="veer-nari-image" />
       </div>
     ))}
